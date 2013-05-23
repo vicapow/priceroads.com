@@ -1,0 +1,390 @@
+/*
+Theme Name: Ilisa
+Theme URI: http://ilisa.pixxels.at
+Author: Marion Lindert
+Author URI: http://www.pixxels.at
+Description: ilisa is a clean and minimal WordPress Theme that can be easily used as a personal portfolio or a business website. A responsive layout optimizes the theme for mobile devices. To customize the theme you can choose your own link-color, logo and favicon.
+Version: 1.1.0
+License: GNU General Public License
+License URI: license.txt
+Tags: light, custom-colors, custom-background, two-columns, right-sidebar, threaded-comments, custom-menu, sticky-post, full-width-template, custom-header, featured-images, theme-options, translation-ready, editor-style
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/* Google-Fonts */
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One); /*h*/
+
+
+/* =Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+html {
+	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+body {
+	background: #fff;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+table { /* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a:focus {
+	outline: thin dotted;
+}
+a:hover,
+a:active { /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+	outline: 0;
+}
+a img {
+	border: 0;
+}
+
+
+
+/** -- GENERAL STRUCTURE -- **/
+
+body, button, input, select, textarea { color: #8e8e8e;	font-family: sans-serif; font-size: 13px; font-size: 1.3rem; line-height: 1.5; }
+
+#page {	max-width: 960px; background-color:#FFF; margin: 0 auto; }
+#branding {margin-left:1em; margin-right:1em;}
+#main { margin: 0 auto;  margin-top:3em; border-top: 1px dotted #999; margin-bottom:3em; border-bottom: 1px dotted #999; margin-left:1em; margin-right:1em; }
+#wrapper { margin:0.5em 0 0; padding-top:2em; overflow: hidden; }
+#content { width: 65.0%; float: left; margin-right:2em;	}
+#secondary { width: 30.0%; float: right; overflow:hidden; }
+#colophon {	width: 100%; float: left; overflow: hidden; font-size: 0.8em; margin-left:1em; margin-right:1em; }
+
+/** -- Fullwidth Page -- **/
+#content.full-width { width:100%!important; }
+body.no-sidebar #content {width: 100%; }
+
+/** -- STYLES -- **/
+h1,h2,h3,h4,h5,h6 { clear: both; font-family: 'Fjalla One', sans-serif;	text-transform:uppercase; }
+h1, h1 a, h2, h2 a { color:#333!important;}
+h1 { font-size:28px; font-size:2.8rem; }
+h2 { font-size:22px; font-size:2.2rem; }
+h3 { font-size:18px; font-size:1.8rem; }
+h4 { font-size:16px; font-size:1.6rem; }
+h5 { font-size:14px; font-size:1.4rem; }
+h6 { font-size:13px; font-size:1.3rem; }
+#content h1 { padding: 1em 0 0.6em; }
+#content h2 { padding: 1em 0 0.6em; } 
+#content h3 { padding: 1em 0 0.3em; }
+#content h4 { padding: 1em 0 0.3em; }
+#content h5 { padding: 1em 0 0.2em;	}
+#content h6 {padding: 0.9em 0 0.1em; }
+#content .entry-header h1:first-child { padding: 0 0 0.6em; }
+
+blockquote { margin: 0.7em 1.5em; padding: 1.5em 0.8em 0.2em; border-left: 0.5em solid #73b1d2;	background-color: #EEE; }
+
+.aligncenter, div.aligncenter {	margin-left: auto; margin-right: auto; display: block; }
+.alignleft { float: left; }
+.alignright { float: right; }
+
+#content address { padding: 0 0 2em 0; font-style: italic; }
+#content abbr, acronym { border-bottom: .1em dotted; }
+#content pre, code, tt, kbd { font-size: 1.1em; }
+
+img { max-width: 100%; height: auto; }
+img.attachment-thumbnail, img.wp-post-image, img.attachment-medium, img.attachment-large, img.attachment-full{ float: left;	margin-right:1em !important; margin-bottom:0.5em!important; }
+
+#content img { max-width:100%; height: auto; margin: 0;	padding: 0; }
+#content img.aligncenter { margin: 1em auto; }
+#content img.alignleft ,#content .wp-caption.alignleft { margin: 1em 1em 0 0; }
+#content img.alignright,#content .wp-caption.alignright { margin: 1em 0 0 2em; }
+#content img.alignnone { margin: 0; }
+#content .wp-caption.alignnone { margin: 0 0 1em; }
+#content .wp-caption { max-width: 100%; }
+#content p.wp-caption-text, .entry-caption p { font-size:0.8em; }
+
+#content object, #content embed, #content iframe { max-width: 100%;	display: block; }
+
+table {	margin: 0 0 1.5em; width: 100%; }
+th { font-weight: bold; }
+#content table { margin:1em 0em 3em 0em; border-collapse: collapse; }
+#content table tr {	border-bottom:1px dotted #8E8E8E; }
+#content table tr th { padding: 1em 2em 1em 2em; border-top:1px dotted #8E8E8E;	border-left:1px dotted #8E8E8E;	border-right:1px dotted #8E8E8E; font-weight:bold; }
+#content table tr td { padding: 1em 2em 1em 2em; border-left:1px dotted #8E8E8E; border-right:1px dotted #8E8E8E; }
+
+/** -- Links -- **/
+
+a { color: #8e8e8e;	text-decoration:none; }
+a:visited { color: #8e8e8e; }
+a:hover, a:focus, a:active { color: #73b1d2; }
+.entry-content a, .more-link, .more-link a, .entry-content a:visited, .more-link a:visited , #comments .comment-content a, #comments .comment-content:visited { color: #73b1d2!important; text-decoration:none; }
+.entry-content a:hover, .more-link a:hover, .entry-content a:focus, .more-link a:focus, .entry-content a:active, .more-link a:active, #comments .comment-content a:hover, #comments .comment-content a:focus, #comments .comment-content a:active { color: #8e8e8e!important; }
+.page-link { clear: both; margin: 0 0 1.5em; } 
+.page-link a { margin:0 0.3em; padding:0.2em 0.3em; background:#EEE; }
+ 
+/** -- Navigations -- **/
+
+#branding #main-menu { display: block; float: right; margin-top:3em; word-wrap: break-word; }
+#branding #main-menu ul { list-style: none;	margin: 0; padding-left: 0; }
+#branding #main-menu li { float: left; position: relative; }
+#branding #main-menu ul li a { font-family: 'Fjalla One', sans-serif; text-transform:uppercase;	display: block;	text-decoration: none; font-size:18px; font-size:1.8rem; padding-left:0.7em; padding-right:0.7em; }
+#branding #main-menu ul li a:hover { color:#FFF!important; background-color:#444!important;	text-decoration: none; }
+#branding #main-menu ul ul { display: none; float: left; position: absolute; top: 2em; left: 0.3em;	z-index: 500; }
+#branding #main-menu ul ul ul {	left: 100%;	top: 0; }
+#branding #main-menu ul ul li a, #branding #main-menu ul ul ul li a { font-size: 0.9em;	color:#000!important; background-color:#FFF!important; width: 9em; height: auto; text-transform: none; border: none; margin: 0.2em 0 0.3em 0.2em; }
+#branding #main-menu ul li:hover > ul {	display: block; }
+#branding #main-menu ul ul a:hover, #branding #main-menu ul ul ul a:hover  { color:#73b1d2!important; background-color: #EEE!important; }
+
+/** -- Lists -- **/
+
+ol, ul { list-style: none outside none; }
+
+#content ul, #content ol {  }
+#content ul { list-style: disc; }
+#content ol { list-style: decimal; }
+#content ul ul,#content ol ol,#content ul ol,#content ol ul { margin-bottom: 0;	margin-left: 1.5em; }
+
+#content .post ul, #content .page ul, #comments .comment-content ul  { padding:0.5em 0 0.5em 2em; line-height: 1.3; }
+#content .post ul li, #content .page ul li, #comments .comment-content ul li { padding:0; list-style: disc!important; }
+#content .post ol, #content .page ol, #comments .comment-content ol { padding:0.5em 0 0.5em 2em ; line-height: 1.3; }
+#content .post ol li, #content .page ol li, #comments .comment-content ol li { padding:0; list-style: decimal!important; }
+#content .post ol ol li, #content .page ol ol li,  #comments .comment-content ol ol li {	list-style: lower-latin!important; }
+#content .post ol ol ol li, #content .page ol ol ol li, #comments .comment-content ol ol ol li {	list-style: decimal!important; }
+
+dl { margin:0; padding: 0; }
+dt{ font-weight: bold; margin: 0; padding-top: 1em; }
+dd { margin: 0; padding-bottom: 1em; padding-left: 2em; }
+
+
+/** -- Blog-Title -- **/
+
+#site-title{ float:left; }
+#site-title a:hover, .entry-header a:hover { color: #73b1d2!important; }
+h2#site-description { color: #8e8e8e; font-family: sans-serif;	font-size: 13px; font-size: 1.3rem;	line-height: 1.5; }
+
+
+/** -- POSTS -- **/
+#content .post { overflow: hidden; clear: both;	padding-bottom: 2em;}
+.entry-meta { clear: both; font-style:italic; color:#CCCCCC; font-size:11px; font-size:1.1rem; }
+#content .sticky {}
+
+
+
+/** -- CLEARING FLOATS -- **/
+.clear { clear:both; display:block;	overflow:hidden; visibility:hidden;	width:0; height:0; }
+.clearfix:after { clear:both; content:' '; display:block; visibility:hidden; width:0; height:0; }
+ 
+  
+
+/** -- Widgets -- **/
+
+.blog .format-aside .entry-title, .archive .format-aside .entry-title {	display: none; }
+.widget { margin: 0 0 1.5em; }
+.widget select { max-width: 100%; }
+
+h3.widget-title { color: #111; font-family: sans-serif;	font-size: 11px; font-size: 1.1rem;	line-height: 1.3; font-weight:bold;	letter-spacing: 0.1em;	margin-bottom:0.8em; }
+aside.widget { font-size:11px; font-size:1.1rem; line-height:1.8; word-wrap: break-word; }
+aside.widget ul li { font-size:11px; font-size:1.1rem; line-height:1.8;	}
+
+.search { padding: 0.3em 0 2em; }
+#searchsubmit {display:none;}
+
+.widget_calendar #wp-calendar caption { text-align: left; margin-bottom: 0.5em; }
+.widget_calendar table#wp-calendar th, .widget_calendar table#wp-calendar td { padding: 0 0.5em 0.5em 0; }
+.widget_calendar table#wp-calendar tbody tr td#today { font-weight: bold; }
+.widget_calendar table#wp-calendar tbody tr td a{ font-weight: bold; font-style: italic; }
+
+
+/* Text elements */
+p { margin-bottom: 1.5em; }
+b, strong {	font-weight: bold; }
+dfn, cite, em, i { font-style: italic; }
+address { margin: 0 0 1.5em; }
+pre { background: #eee;	font-family: "Courier 10 Pitch", Courier, monospace; font-size: 15px; font-size: 1.5rem; line-height: 1.6; margin-bottom: 1.6em; padding: 1.6em; overflow: auto; max-width: 100%; }
+code, kbd, tt, var { font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+abbr, acronym { border-bottom: 1px dotted #666;	cursor: help; }
+mark, ins {	background: #fff9c0; text-decoration: none; }
+sup, sub { font-size: 75%; height: 0; line-height: 0; position: relative; vertical-align: baseline; }
+sup { bottom: 1ex; }
+sub { top: .5ex; }
+small {	font-size: 75%; }
+big { font-size: 125%; }
+figure { margin: 0; }
+
+
+/**-- nav below, image navigation --**/
+#content #nav-below .nav-previous, #nav-below .nav-next, #content #nav-posts .nav-previous, #nav-posts .nav-next { float:left;}
+#content #nav-below .nav-previous a, #content #nav-below .nav-next a, #image-navigation .previous-image a, #image-navigation .next-image a{ margin:0; display:block; margin-top:1em; }
+#content #nav-below .nav-previous a, #image-navigation .previous-image a, #content #nav-posts .nav-previous a{ padding-right: 1em; }
+#image-navigation .previous-image, #image-navigation .next-image { float:right; }
+
+/** -- GALLERY -- **/
+#content .gallery {	margin:auto; }
+#content .gallery-item { float: left; text-align: left;	width: 29%;	vertical-align: top; overflow: hidden; margin-right:0.5em; }
+#content .gallery-caption {	font-size:0.8em; margin:0;	padding-right:3em;	padding-left:0;	}
+
+/** -- COMMENTS -- **/
+#comments {	background-color:#FFF; margin-top:3em; }
+#content #comments > ul,  #content #comments > ol { margin:0; }
+#comments .comment-content ul {	list-style: disc outside none; }
+#comments .comment-content ol{ list-style: decimal outside none; }
+#comments ol.commentlist {font-size:1em; }
+#content #comments ol li ul.children { padding:0em; }
+#content #comments ol li.depth-1 { padding:0em; }
+#content #comments ol li.depth-2, #content #comments ol li.depth-3, #content #comments ol li.depth-4, #content #comments ol li.depth-5 { margin:0 0 0em 2em; padding:0em; border-bottom:none; }
+#comments .children li{	list-style:none; }
+#comments .comments-title { padding-top:1em; padding-bottom:1em; }
+.content-wrapper { float:left; margin-left:1em;	}
+.comment-author img{ float:left; }
+.avatar-wrapper { float:left; }
+.comment-author {}
+#comments .bypostauthor {}
+.commentmetadata { font-size:0.8em; }
+.comment-meta-container {float:left; margin-left:1em; margin-bottom:1em; }
+.comment-content { clear:both; margin-left:4em; }
+#comments .comment-awaiting-moderation {color: #E00; }
+.reply {margin-bottom:3em;	margin-left:4em; clear:both; }
+.reply a, .reply a:link, .reply a:visited {	background: #DFDFDF; padding: 0.3em 0.5em; text-transform:uppercase; font-size:0.9em; font-weight:bold; }
+.reply a:hover, .reply a:focus, .reply a:active { background: #73b1d2; color:#FFF!important; text-decoration:none; }
+#content img .avatar { float:left; }
+#comments #comment-nav-above, #comments #comment-nav-below { margin-bottom:2em; }
+#comments .nav-previous a, #comments .nav-next a { font:italic 1.4em  Times, serif;	font-weight:bold; }
+
+
+/** -- comment reply -- **/
+#comments #respond { background: #EEE; padding-top: 1em; padding-right: 3em; padding-bottom: 1em; padding-left: 1em; border-top: 1px dotted #999; }
+#content #comments #respond h3#reply-title { margin:0; padding:0; font-size: 1.4em;}
+#commentform { font-size: 0.9em; }
+
+/** -- FOOTER -- **/
+a.top {	margin: 0.5em 0; font-weight: bold;	display: block; }
+
+
+/* Buttons/Inputs */
+
+button, input, select, textarea { font-size: 100%; /* Corrects font size not being inherited in all browsers */	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */ vertical-align: baseline; /* Improves appearance and consistency in all browsers */ *vertical-align: middle; /* Improves appearance and consistency in all browsers */ }
+button, input {	line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */ *overflow: visible;  /* Corrects inner spacing displayed oddly in IE6/7 */ }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { background-color:#DFDFDF; padding: 0.5em 0.5em; margin: 0; border: none; text-align: center;	text-transform: uppercase;	font-size: 1em;	font-weight:bold; }
+button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { background-color:#73b1d2; color:#FFF!important; }
+button:focus, html input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, button:active, html input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active { background-color:#73b1d2; color:#FFF!important; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */ padding: 0; /* Addresses excess padding in IE8/9 */ }
+input[type=text], input[type=email], textarea {	color: #666; border: 1px solid #ccc; border-radius: 3px; margin: 0.5em 0 0; padding: 0.5em; display: block; font-size: 1em;	width:50%;	}
+textarea {overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */ vertical-align: top; /* Improves readability and alignment in all browsers */	width: 98%; }
+
+
+/* SHORTCODES
+--------------------------------------------- */
+.one_half, .one_third, .one_fourth, .two_third, .three_fourth { float:left; margin-bottom:1em; margin-right:3%; position:relative; line-height: 1.8; }
+.one_half {	width:48%;}
+.one_third { width:31%;}
+.one_fourth {width:22%;}
+.two_third {width:65%;}
+.three_fourth {	width:72%; }
+.last{ clear:right;	margin-right:0 !important;}
+#content span.highlight { padding: 0.1em; background-color: #fbff98; color:#000;}
+.white-box, .blue-box, .yellow-box, .orange-box, .red-box, .pink-box, .green-box, .grey-box, .brown-box { margin: 0.5em 0; padding: 0.5em; overflow:hidden; color:#000; }
+.white-box { background:#fff; border: 1px dotted #CCC; }
+.blue-box {	background: #73b1d2; border: 1px dotted #6fb0be;}
+.yellow-box { background: #fbff98; border: 1px dotted #dfce0b;}
+.orange-box { background: #fbc36d; border: 1px dotted #f5ae31; }
+.red-box { background: #ff8767;	border: 1px dotted #ea5d37;}
+.pink-box {	background: #ff7fea; border: 1px dotted #f038dd;}
+.green-box { background: #89ed90; border: 1px dotted #5bc984;}
+.brown-box { background: #d1b081; border: 1px dotted #82683f;}
+.grey-box { background: #CCC; border: 1px dotted #999;}
+
+
+/** -- CSS3 MEDIA QUERIES FOR RESPONSIVE DESIGN -- **/
+
+
+@media screen and (max-width : 800px) {
+#main {	margin: 0;}
+#branding {	margin: 0;}
+#header { padding:0;}
+#page {	max-width: 100%; margin: 0 auto; padding: 0 2em; }
+body.no-sidebar #content, #content { width: 100%; }
+#secondary { width: 100%; float:left; margin-left:0; margin-top:3em;}
+aside.widget { font-size: 1em; padding-bottom:2em; padding-top:2em;	border-top:1px dotted #8E8E8E;	}
+aside.widget ul{ background-color: #FFF; }
+aside.widget ul li { padding: 0; margin:0 2em 0 0; list-style: none; line-height:2;}
+aside.widget ul li ul {	display:inline;	margin:0 0 0 2em; }
+aside.widget li.menu-item ul.sub-menu li.menu-item:last-child{ margin:0; }
+aside.widget_categories li {display:inline;}
+.widget a, .widget a:link, .widget a:visited { color: #73b1d2;	text-decoration:underline; }
+.widget a:hover, .widget a:active {	color: #333; text-decoration: underline; }
+.widget ul li ul a, .widget ul li ul a:link, .widget ul li ul a:visited {color: #999!important; text-decoration:underline; }
+.widget ul li ul a:hover, .widget ul li ul a:active { color: #333!important; text-decoration: underline; }
+#content #nav-below {border-top:1px dotted #8E8E8E; padding-top:1em;}
+#colophon {	margin: 0;}
+}
+
+@media screen and (max-width : 480px) {
+#branding {	border:none;}
+#branding #main-menu {float:none; margin:0;	padding:0; background-color:#DDD;}
+#branding #main-menu ul {margin:0; padding:0; }
+#branding #main-menu ul li, #branding #main-menu ul li ul li  {list-style-type:none; padding:0; margin:0; display:inline; float:none;}
+#branding #main-menu ul ul, #branding #main-menu ul ul ul {display:inline; float:none; margin:0; position:relative; top:0; padding:0; left:1em;  }	
+#branding #main-menu ul ul {left:0em;}
+#branding #main-menu ul li a {color:#FFF;background-color:#333;float:none; margin:0; margin-bottom:0.2em; margin-top:0.5em;;}
+#branding #main-menu ul li a:hover {color:#FFF;	background-color:#999!important;text-decoration: none;}
+#branding #main-menu ul ul li a, #branding #main-menu ul ul ul li a {color:#000; background-color:#DDD!important; padding:0; margin:0; margin-left:1em; line-height:1.5;  }
+#branding #main-menu ul ul li a:hover, #branding #main-menu ul ul ul li a:hover  {color:#73b1d2!important; background-color:#DDD!important;text-decoration:underline; }
+#branding #main-menu ul li:hover > ul {display: inline;}
+#blog-title {padding: 1em 0 0.5em;}
+#site-title {font-size:2.5em; margin: 0.5em 0.5em 0 0; line-height:1;}
+#site-description {font-size:0.8em; }
+.entry-header {padding-bottom: 0;}
+.entry-header h1, .entry-header h1 a, .entry-header h1 a:link, .entry-header h1 a:visited {line-height:1; font-size:1.2em; padding: 0;}
+#wrapper {margin:0.5em 0 0;	padding: 0; }
+}
+
+p a, ul a, li a{
+  text-decoration: underline;
+}
