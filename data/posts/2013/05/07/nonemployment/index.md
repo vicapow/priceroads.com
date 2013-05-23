@@ -1,0 +1,32 @@
+## [Nonemployment](/2013/05/07/nonemployment/ "Nonemployment")
+
+May 7, 2013
+            
+
+Over at National Review, Reihan Salam points out that college attendance explains anunder-appreciatedshare of falling labor force participation for young people ([link](http://www.nationalreview.com/agenda/347480/americas-dismal-youth-nonemployment-rate)):
+
+In recent years, the percentage increase in the number of students age 25 and over has been larger than the percentage increase in the number of younger students, and this pattern is expected to continue.Between 2000 and 2010, the enrollment of students under age 25 increased by 34 percent. Enrollment of students 25 and over rose 42 percent during the same period.
+
+I am nonemployed. In fact I am 26.5 and have only participated 18 months in the full-time labor force, 5 months of which I was self-employed doing freelance motion graphics. I didn’t even work summers during college. Instead I made a documentary ([It’s a Thick Book](http://www.aptv.org/videoroom/viewprogram.asp?FileID=900)) and went all around South America.
+
+(Here I am about to do some economics with no data at all.)I believe this tendency among young people is partly a rational response to life-cycle income inequality. Scott Sumner gives an example of what I mean ([link](http://www.themoneyillusion.com/?p=7215))
+
+I dragged out my annual Social Security data that I get in the mail, and it shows how much I earned during each year. I tried to do a rough adjustment forcost of living changes,to make things fairer (otherwise my income looks extremely unequal.) I am pretty sure my five income “quintiles” are roughly as follows: 3%, 13%, 22%, 27%, and 35%. In other words during my worst 7 years I made 3% of my total real lifetime income, and during my best 5 years about 35%.
+
+You might divide jobs into two categories. In ‘up-through-the-ranks’ jobs, you are rewarded for years of service. In ‘leverage’ jobs, you are either rewarded for having unusual skills or arbitrage. You could call ‘leverage’ jobs ‘meritocratic’ but that is value-laden and I’d argue clearly wrong. For example, Hilary Duff was paid $100,000 tonotstar inBonnie and Clydeafter she got pregnant ([link](http://www.cinemablend.com/new/Hilary-Duff-Paid-100-000-To-Walk-Away-From-Bonnie-And-Clyde-Remake-26482.html)). She was paid $100,000 not to work.
+
+In an ‘up-through-the-ranks’ job, there is a high opportunity cost to delaying full participation. I recently advised my Teamster cousin, who was born 30 days after me and has never not worked at least 40-hour weeks, on his best retirement option. The defined-benefit options all paid in direct proportion to years-of-service. Further, he gets automatic raises, and is guaranteed to get promoted. He will be a millionaire if he just saves wisely and sticks with his job.
+
+In a ‘leverage’ job, most of your lifetime earnings will happen quickly and without much regard for your past employment.There is a low opportunity cost to forgoing the irrelevant beginning of your working life. On the contrary, it makes sense to spend those years signaling that you are worthy of a leverage job, which college and grad school and internships and other signaling measures accomplish sometimes.
+
+For an good example of a non-college option, I’ll use my roommate, a computer programmer. He works part-time teaching JavaScript–earning enough to get by–and spends the rest of his time on open-source. Recruiters are always leaving messages on his cell phone, because a recruiter can be paid $10k for landing him, but the opportunity cost of a year spent working full-time is too large…he could become famous enough in the open-source community to get a huge freelance salary or join a promising startup. And since the companies don’t have defined pension plans, automatic promotions or raises, his foregone salary doesn’t handicap his lifetime consumption very much. Finally, the leverage he attains from open-source (code skill + a signal of creativity) has a sky-highoption value because it isuniversal:all tech firms will yield to this leverage. The leverage he would obtain over years of working at aparticulartech firm would be specific to his knowledge of that firm, and other firms would have no use for it should the firm dwindle.
+
+My impression is that ‘up-through-the-ranks’ jobs are dwindling and leverage jobs are propagating. The opportunity cost of grad school and other signaling/skill-enhancement opportunitiesare therefore falling for those able enough to seize its signals.
+
+However, it is also important to note how much of increased college attendance is founded on delusion. Alex Tabarrok ([link](http://marginalrevolution.com/marginalrevolution/2011/11/college-has-been-oversold.html)):
+
+The chart at right shows the number of bachelor’s degrees in various fields today and 25 years ago. STEM fields are flat (declining for natives) while the visual and performing arts, psychology, and communication and journalism (!) are way up.
+
+The MA Journalism complex is a perfect example of an industry founded on delusion. When I attended the Institute for Humane Studies Journalism camp in 2009, the real journalists’ main goal seemed to be to convince us not to get one. The J.D. and part-time MBA (especially the ones with ‘leadership’ in the degree titles) complexes seem from afar to be similar delusionocracies. A lot of the salespeople at the steel newspaper where I used to work once worked for the Art Institutes’ parent company, where they made money not scamming but deluding veterans, which has been documented ([link](http://www.bloomberg.com/news/2010-09-23/veterans-failing-to-learn-show-hazards-of-for-profit-schools-under-gi-bill.html)).
+
+					            
