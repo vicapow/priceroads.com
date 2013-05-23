@@ -1,0 +1,23 @@
+{
+  "name": "priceroads.com",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "compile.js",
+  "dependencies": {
+    "handlebars": "~1.0.11",
+    "marked": "~0.2.8",
+    "mkdirp": "~0.3.5",
+    "underscore": "~1.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vicapow/priceroads.com.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "gitHead": "fbf13327e513b4ed28d09ba7b71b98541f640630"
+}
